@@ -32,7 +32,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.atividade1:
                 Intent intent = new Intent(MainActivity.this, atividade1.class);
                 startActivity(intent);
-
+                break;
+            case R.id.activity_convert:
+                Intent intent1 = new Intent(MainActivity.this, activity_convert.class);
+                startActivity(intent1);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

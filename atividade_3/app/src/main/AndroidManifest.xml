@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Atividade_3">
         <activity
+            android:name=".activity_convert"
+            android:exported="false" />
+        <activity
             android:name=".atividade1"
             android:exported="false" />
         <activity
