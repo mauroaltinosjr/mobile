@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent1 = new Intent(MainActivity.this, activity_convert.class);
                 startActivity(intent1);
                 break;
+            case R.id.calculaIMC:
+                Intent intent2 = new Intent(MainActivity.this, calculaIMC.class);
+                startActivity(intent2);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

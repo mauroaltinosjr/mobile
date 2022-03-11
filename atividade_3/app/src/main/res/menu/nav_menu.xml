@@ -13,4 +13,8 @@
         android:title="Conversor de moedas"
         app:showAsAction="never"/>
 
+    <item android:id="@+id/calculaIMC"
+        android:title="Calculadora de IMC"
+        app:showAsAction="never"/>
+
 </menu>
