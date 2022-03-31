@@ -2,17 +2,70 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <Button
+            android:id="@+id/bt_atividade1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atividade 1 - Tarefa 1" />
+
+        <Button
+            android:id="@+id/bt_atividade1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atividade 1 - Tarefa 2" />
+
+        <Button
+            android:id="@+id/bt_atividade2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atividade 2" />
+
+        <Button
+            android:id="@+id/bt_atividade3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atividade 3" />
+
+        <Button
+            android:id="@+id/bt_conversor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conversor de Moedas" />
+
+        <Button
+            android:id="@+id/bt_imc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de IMC" />
+
+        <Button
+            android:id="@+id/bt_sqlite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SQLite" />
+
+        <Button
+            android:id="@+id/bt_webService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Web Service" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,5 +16,16 @@
     <item android:id="@+id/calculaIMC"
         android:title="Calculadora de IMC"
         app:showAsAction="never"/>
-
+    <item
+        android:id="@+id/busca"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        android:title="Busca"/>
+    <item
+        android:id="@+id/share"
+        android:title="Share"
+        android:icon="@drawable/ic_baseline_share_24"
+        app:showAsAction="always"
+        app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"/>
 </menu>
