@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button browser = findViewById(R.id.bt_browser);
         Button mapa = findViewById(R.id.bt_mapa);
-        
+        Button camera = findViewById(R.id.bt_camera);
 
         browser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +37,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivity(intent);
+            }
+        });
+
+
         
 
 
