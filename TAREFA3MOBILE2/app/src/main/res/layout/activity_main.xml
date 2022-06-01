@@ -13,32 +13,30 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tX"
+            android:id="@+id/enemies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="X: "
+            android:text=" X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X "
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
         <TextView
-            android:id="@+id/tY"
+            android:id="@+id/enemies2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Y: "
+            android:text="   X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X "
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
         <TextView
-            android:id="@+id/tZ"
+            android:id="@+id/enemies3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Z: "
+            android:layout_height="500dp"
+            android:text=" X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X "
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
 
         <TextView
             android:id="@+id/tv_letraA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="A"
+            android:layout_marginTop="0dp"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
 

@@ -45,22 +45,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         sensorY = event.values[1];
         sensorZ = event.values[2];
 
-        TextView tx = (TextView) findViewById(R.id.tX);
-        TextView ty = (TextView) findViewById(R.id.tY);
-        TextView tz = (TextView) findViewById(R.id.tZ);
-
-        tx.setText("X: " + (sensorX));
-        ty.setText("Y: " + (sensorY));
-        tz.setText("Z: " + (sensorZ));
-
 
         TextView letraA = (TextView) findViewById(R.id.tv_letraA);
 
-        int margem = 500;
-        if(margem <= 1000){
-            margem = (int) ((sensorX + 10)*70);
+        int margem = 200;
+        if(margem <= 400){
+            margem = (int) ((sensorX + 10)*40);
         }else{
-            margem = 1000;
+            margem = 400;
         }
 
 
