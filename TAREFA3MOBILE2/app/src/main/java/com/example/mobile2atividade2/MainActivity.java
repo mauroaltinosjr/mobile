@@ -57,13 +57,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         TextView letraA = (TextView) findViewById(R.id.tv_letraA);
 
         int margem = 500;
-        while(margem <= 1000) {
-            if (sensorX > 0) {
-                margem++;
-            } else if (sensorX < 0) {
-                margem--;
-            }
+        if(margem <= 1000){
+            margem = (int) ((sensorX + 10)*70);
+        }else{
+            margem = 1000;
         }
+
 
 
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -71,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         letraA.setLayoutParams(params);
 
 
-        //int margem = (int) ((sensorX + 10)*30);
+
 
 
 
