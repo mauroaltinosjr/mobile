@@ -10,6 +10,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -22,7 +23,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     float sensorX;
     float sensorY;
     float sensorZ;
-
+    Button bt_tiro;
+    TextView tv_tiro;
+    Boolean tiroAndamento = false;
+    int topMarginTiro = 1200;
 
 
     @SuppressLint("ServiceCast")
@@ -34,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener((SensorEventListener) this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+
 
 
 
@@ -61,8 +66,29 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         params.setMargins(margem, params.topMargin, params.rightMargin, params.bottomMargin);
         letraA.setLayoutParams(params);
 
+        LinearLayout.LayoutParams paramsTiro = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        paramsTiro.setMargins(margem, topMarginTiro, paramsTiro.rightMargin, paramsTiro.bottomMargin);
 
 
+        bt_tiro = findViewById(R.id.bt_tiro);
+        bt_tiro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tv_tiro = findViewById(R.id.tv_tiro);
+                if(tiroAndamento == false) {
+                    tv_tiro.setText("||");
+                    tv_tiro.setLayoutParams(paramsTiro);
+                    tiroAndamento = true;
+                    while(topMarginTiro > 0 && tiroAndamento == true){
+                        topMarginTiro--;
+                        
+                    }
+                }else{
+                    tv_tiro.setText(" ");
+                    tiroAndamento = false;
+                }
+            }
+        });
 
 
 

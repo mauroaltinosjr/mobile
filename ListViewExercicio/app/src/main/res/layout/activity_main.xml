@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="Id"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"></EditText>
+
+    <EditText
+        android:id="@+id/et_bebida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bebida"
+        app:layout_constraintTop_toBottomOf="@+id/et_id"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"></EditText>
+
+    <EditText
+        android:id="@+id/et_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor"
+        app:layout_constraintTop_toBottomOf="@+id/et_bebida"
+        tools:ignore="MissingConstraints"></EditText>
+
+    <EditText
+        android:id="@+id/et_marca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Marca"
+        app:layout_constraintTop_toBottomOf="@+id/et_valor"
+        tools:ignore="MissingConstraints"></EditText>
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Cadastrar"
+        app:layout_constraintStart_toStartOf="@+id/et_marca"
+        app:layout_constraintTop_toBottomOf="@+id/et_marca"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:id="@+id/bt_deletar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Deletar"
+        app:layout_constraintEnd_toEndOf="@+id/et_marca"
+        app:layout_constraintTop_toBottomOf="@+id/et_marca"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:id="@+id/bt_limpar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Limpar"
+        app:layout_constraintStart_toStartOf="@+id/bt_cadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/bt_cadastrar"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:id="@+id/bt_alterar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Alterar"
+        app:layout_constraintEnd_toEndOf="@+id/bt_deletar"
+        app:layout_constraintTop_toTopOf="@+id/bt_limpar"></Button>
+
+    <ListView
+        android:id="@+id/lv_bebidas"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/bt_limpar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp">
+
+    </ListView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
